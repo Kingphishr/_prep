@@ -13,8 +13,6 @@
 
 package ctci;
 
-import java.util.HashMap;
-
 public class Ch1_4__Palindrome_Manipulation {
     //Remove spaces and do toLowerCase
     //Check if char count is even, if it is return -1. Otherwise, ja. It can be a palindrome.

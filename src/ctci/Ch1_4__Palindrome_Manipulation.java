@@ -19,12 +19,12 @@ public class Ch1_4__Palindrome_Manipulation {
     private static boolean canBeAPalindrome(String s){
         char[] str = s.toLowerCase().toCharArray();
         int charCount = 0;
-        for(char i : str){
-            if(i != ' '){
+
+        for(char i : str)
+            if(i != ' ')
                 charCount++;
-            }
-        }
-        return charCount%2 == 0;
+
+        return charCount%2 != 0;
     }
 
     public static void main(String[] args){

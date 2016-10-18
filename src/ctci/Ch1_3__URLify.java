@@ -17,8 +17,8 @@ public class Ch1_3__URLify {
 	private static StringBuilder builder = new StringBuilder();
 	
 	
-	
-	public String urlify(String raw, int true_length){
+	// this is my implementation. Dunno why I should use true_length
+	public String urlify_1(String raw, int true_length){
 		raw = raw.trim();
 		String[] just_words = raw.split(" ");
 		
@@ -32,6 +32,11 @@ public class Ch1_3__URLify {
 		}
 		
 		return builder.toString();
+	}
+	
+	//implementations taking advantage of true_length
+	public String urlify_2(String raw, int true_length) {
+		return null;
 	}
 }
 

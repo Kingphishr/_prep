@@ -13,7 +13,7 @@ public class Ch1_3__URLifyTest {
 	
 	@Test
 	public void evaluateUrlify_1() {
-		String urlified = test.urlify("Mr John Smith    ", 13);
+		String urlified = test.urlify_1("Mr John Smith    ", 13);
 		assertEquals(correct_answer, urlified);
 	}
 

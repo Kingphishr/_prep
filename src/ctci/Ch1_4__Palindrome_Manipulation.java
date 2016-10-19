@@ -23,6 +23,8 @@ public class Ch1_4__Palindrome_Manipulation {
     private static boolean canBeAPalindrome(String s){
         char[] str = s.toLowerCase().toCharArray();
         HashMap<Character, Integer> map = new HashMap<>();
+        HashMap<Character, Integer> isUnique = new HashMap<>();
+
         int charCount = 0, oddCount = 0;
 
         for(char i : str){
@@ -39,18 +41,19 @@ public class Ch1_4__Palindrome_Manipulation {
         }
 
         for(char i : str){
-            if(i != ' ' && map.get(i)%2 == 1){
+            if(i != ' ' && map.get(i)%2 == 1 && isUnique.get(i) == null){
                 oddCount++;
+                isUnique.put(i, map.get(i));
             }
         }
 
-        return charCount%2 != 0 && oddCount == 1;
+        return (charCount%2 == 0 && oddCount == 0) || (charCount%2 !=0 && oddCount == 1);
     }
 
     public static void main(String[] args){
         System.out.println(canBeAPalindrome("Tact Coa")); //true
-        System.out.println(canBeAPalindrome("a ba")); //true
-        System.out.println(canBeAPalindrome("bbbab")); //true
+        System.out.println(canBeAPalindrome("bbbb")); //true
+        System.out.println(canBeAPalindrome("bbb")); //true
         System.out.println(canBeAPalindrome("ccc ba")); //false
         System.out.println(canBeAPalindrome("nope wont work")); //false
     }

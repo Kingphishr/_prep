@@ -52,7 +52,7 @@ public class Ch1_4__Palindrome_Manipulation {
 
     public static void main(String[] args){
         System.out.println(canBeAPalindrome("Tact Coa")); //true
-        System.out.println(canBeAPalindrome("bbbb")); //true
+        System.out.println(canBeAPalindrome("ab aba")); //true
         System.out.println(canBeAPalindrome("bbb")); //true
         System.out.println(canBeAPalindrome("ccc ba")); //false
         System.out.println(canBeAPalindrome("nope wont work")); //false

@@ -18,10 +18,10 @@ public class Ch3_2__StackMin {
         test.push(90);
         test.push(90);
         test.push(1);
-        System.out.println(test.min());
+        System.out.println(test.min()); // Output = 1
         test.pop();
         test.pop();
-        System.out.println(test.min());
+        System.out.println(test.min()); // Output = 2
     }
 }
 

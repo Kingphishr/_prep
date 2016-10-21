@@ -9,8 +9,6 @@ package ctci;
  * Push, pop and min should all operate in O(1) time
  */
 public class Ch3_2__StackMin {
-
-
     public static void main(String[] args){
         Min_Int_Stack test = new Min_Int_Stack();
         test.push(5);
@@ -24,9 +22,7 @@ public class Ch3_2__StackMin {
         test.pop();
         test.pop();
         System.out.println(test.min());
-
     }
-
 }
 
 class Min_Int_Stack{
@@ -45,7 +41,6 @@ class Min_Int_Stack{
     }
 
     public void push(int i){
-
         //check if first element, if so min is the first element. Add to minstack;
         if(pointer == 0){
             this.minStack[minPointer] = i;
@@ -56,7 +51,6 @@ class Min_Int_Stack{
             this.minStack[minPointer] = i;
             minPointer++;
         }
-
         //normal push
         if(pointer < mainStack.length){
             mainStack[pointer]  = i;
@@ -64,8 +58,6 @@ class Min_Int_Stack{
         }
         else
             System.out.println("Stack Full");
-
-
     }
 
     public void pop(){
@@ -75,7 +67,6 @@ class Min_Int_Stack{
                 minStack[minPointer - 1] = 0;
                 minPointer--;
             }
-
             //normal pop
             mainStack[pointer - 1] = 0;
             pointer--;

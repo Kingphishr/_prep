@@ -1,5 +1,7 @@
 package ctci;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Created by aatifshah on 10/20/16.
  * Problem 3.2
@@ -22,6 +24,20 @@ public class Ch3_2__StackMin {
         test.pop();
         test.pop();
         System.out.println(test.min()); // Output = 2
+
+
+        node_min_stack<Integer> test2 = new node_min_stack<>();
+        test2.push(5);
+        test2.push(4);
+        test2.push(2);
+        test2.push(9);
+        test2.push(90);
+        test2.push(90);
+        test2.push(1);
+        System.out.println(test2.min()); // Output = 1
+        test2.pop();
+        test2.pop();
+        System.out.println(test2.min()); // Output = 2
     }
 }
 
@@ -81,3 +97,53 @@ class Min_Int_Stack{
             return -1;
     }
 }
+
+class node_min_stack<T extends Comparable>{
+    private node<T> main = new node<>(null);
+    private node<T> min = new node<>(null);
+    node<T> temp;
+    node<T> minTemp;
+
+
+    //push
+    public void push(T data){
+        if(main.data == null){
+            main.data = data;
+            min.data = data;
+        }
+        else{
+            temp = new node<T>(data);
+            temp.next = main;
+            main = temp;
+
+            if(min.data.compareTo(data) == 1){
+                minTemp = new node<T>(data);
+                minTemp.next = min;
+                min = minTemp;
+            }
+        }
+    }
+    //pop
+    public T pop(){
+        if(main.data.compareTo(min.data) == 0)
+            min = min.next;
+        node<T> temp = main.next;
+        main = main.next;
+        return temp.data;
+    }
+
+    //
+    public T min(){
+        return min.data;
+    }
+}
+
+class node<T>{
+    public T data;
+    public node next;
+    public node(T data){
+        this.data = data;
+    }
+
+}
+

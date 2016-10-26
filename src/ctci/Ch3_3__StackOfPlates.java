@@ -32,7 +32,6 @@ public class Ch3_3__StackOfPlates {
         test.pop();
         test.pop();
         System.out.println(test.numOfStacks());
-
         System.out.println(test.popAt(0));
 
 

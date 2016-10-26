@@ -85,6 +85,8 @@ class SetOfStacks<T>{
     }
 
 }
+
+
 class Stack<T>{
     ArrayList<T> stack;
     private int size;

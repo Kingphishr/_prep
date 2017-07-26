@@ -1,4 +1,4 @@
-# _prep
+# Cracking the Coding Interview
 
-Practice problems to keep me sharp.
+Good problems, highly recommend to anyone who's just starting with interview prep. You just need this one book.
 

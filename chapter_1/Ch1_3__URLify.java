@@ -1,6 +1,5 @@
-package ctci;
+package chapter_1;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
 
 import java.util.Arrays;
 

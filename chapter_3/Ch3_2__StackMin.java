@@ -1,6 +1,5 @@
-package ctci;
+package chapter_3;
 
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Created by aatifshah on 10/20/16.

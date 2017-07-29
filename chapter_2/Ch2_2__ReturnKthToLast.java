@@ -1,4 +1,6 @@
-package ctci;
+package chapter_2;
+
+import utils.*;
 
 /**
  * Created by LAViATHoR on 10/19/2016.

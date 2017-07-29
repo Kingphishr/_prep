@@ -1,4 +1,4 @@
-package ctci;
+package chapter_5;
 
 /**
  * Created by LAViATHoR on 10/26/2016.

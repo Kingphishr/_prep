@@ -1,6 +1,4 @@
-package ctci;
-
-import com.intellij.openapi.vcs.history.VcsRevisionNumber;
+package chapter_4;
 
 import java.util.*;
 import java.util.LinkedList;

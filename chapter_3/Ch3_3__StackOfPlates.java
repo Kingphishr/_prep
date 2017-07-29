@@ -1,4 +1,4 @@
-package ctci;
+package chapter_3;
 
 import java.util.ArrayList;
 

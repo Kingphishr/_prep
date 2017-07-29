@@ -1,4 +1,4 @@
-package ctci;
+package utils;
 
 /**
  * Created by LAViATHoR on 10/19/2016.
@@ -28,15 +28,3 @@ public class LinkedList {
 
 }
 
-class LinkNode{
-    private String data;
-    public LinkNode next;
-
-    public LinkNode(String item){
-        this.data = item;
-    }
-
-    public String getData(){
-        return data;
-    }
-}

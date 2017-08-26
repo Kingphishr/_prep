@@ -8,7 +8,7 @@ package chapter_6;
 * SOLUTION
 *
 * Complexity = O(n)
-* Space      = O(k) where k is length of remove characters
+* Space      = O(n) where k is number of words
 *
 *
 * */

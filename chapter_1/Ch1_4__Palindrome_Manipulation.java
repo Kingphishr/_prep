@@ -12,7 +12,7 @@
 * */
 
 
-package ctci;
+package chapter_1;
 
 import java.util.HashMap;
 

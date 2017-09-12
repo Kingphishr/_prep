@@ -13,7 +13,7 @@ import java.awt.*;
  * Partition nodes in linked list around a value such that all nodes with less or equal to value x are before it.
  *
  *
- * The algorithm outlined below operates in O(n) space and takes O(1) space
+ * The algorithm outlined below operates in O(n) time and takes O(1) space
  *
  *
  */

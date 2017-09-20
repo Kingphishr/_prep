@@ -42,6 +42,12 @@ public class BinaryTree {
 
     }
 
+    public void add(int[] data){
+        for(int i : data){
+            add(i);
+        }
+    }
+
     public BinaryNode getRoot(){
         return root;
     }

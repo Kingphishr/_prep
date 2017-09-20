@@ -5,7 +5,9 @@ package utils;
  */
 public class Node<T> {
     public T data;
-    public Node next;
+    public Node next, left, right;
+
+
 
     public Node(T d){
         this.data = d;

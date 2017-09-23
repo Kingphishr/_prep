@@ -8,7 +8,7 @@ import java.util.HashMap;
 /**
  * Created by aatifshah on 9/22/17.
  */
-public class Ch8_4__RecursiveMultiply {
+public class Ch8_5__RecursiveMultiply {
 
     public static int recursiveMultiply(int a, int b){
         return recursiveMultiply(a, b, new HashMap<>());
@@ -42,8 +42,8 @@ public class Ch8_4__RecursiveMultiply {
 class Test_RecursiveMultiply{
     @Test
     void testRecursiveMultiply(){
-        Assertions.assertEquals(-6, Ch8_4__RecursiveMultiply.recursiveMultiply(-3, 2));
-        Assertions.assertEquals(36, Ch8_4__RecursiveMultiply.recursiveMultiply(9, 4));
-        Assertions.assertEquals(20, Ch8_4__RecursiveMultiply.recursiveMultiply(-4, -5));
+        Assertions.assertEquals(-6, Ch8_5__RecursiveMultiply.recursiveMultiply(-3, 2));
+        Assertions.assertEquals(36, Ch8_5__RecursiveMultiply.recursiveMultiply(9, 4));
+        Assertions.assertEquals(20, Ch8_5__RecursiveMultiply.recursiveMultiply(-4, -5));
     }
 }

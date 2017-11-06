@@ -1,4 +1,3 @@
-# Cracking the Coding Interview
+# Coding Bat
 
-Good problems, highly recommend to anyone who's just starting with interview prep. You just need this one book.
-
+Recommended by GOOGLE.

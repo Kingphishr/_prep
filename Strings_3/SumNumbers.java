@@ -3,7 +3,11 @@ package Strings_3;
 /**
  * Created by aatifshah on 11/5/17.
  */
-public class sumNumbers {
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class SumNumbers {
     public int sumNumbers(String str) {
         int sum = 0, startIndex = 0, endIndex = 0;
         boolean foundNumber = false;
@@ -21,7 +25,21 @@ public class sumNumbers {
                 }
             }
         }
+
+        if(foundNumber) sum += Integer.parseInt(str.substring(startIndex));
         return sum;
     }
 }
 
+class TestSumNumbers {
+
+    @Test
+    void sumNumbersTest(){
+        SumNumbers test = new SumNumbers();
+
+        Assertions.assertEquals(123, test.sumNumbers("abc123xyz"));
+        Assertions.assertEquals(44, test.sumNumbers("aa11b33"));
+        Assertions.assertEquals(18, test.sumNumbers("7 11"));
+
+    }
+}
